@@ -1,9 +1,5 @@
 
 
-/* Please ❤ this if you like it! */
-
-
-
 (function($) { "use strict";
 
 	//Switch dark/light
@@ -57,4 +53,14 @@
 	});
 	
 })(jQuery);
+
+// pre loader start
+function loader(){
+    document.querySelector('.loader-container').classList.add('fade-out');
+}
+function fadeOut(){
+    setInterval(loader,1000);
+}
+window.onload = fadeOut;
+// pre loader end
 
