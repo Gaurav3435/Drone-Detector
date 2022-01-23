@@ -8,7 +8,7 @@
   	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
   	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
 	<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link id='favicon' rel="shortcut icon" href="./Content/drone.png" type="image/x-png">
 
   
@@ -32,17 +32,26 @@
 		</div> -->
 
 		<div class="input">
-			<center>
-			<input class="choose" type="file" onchange="showFiles(event)" accept=".png, .jpg, .jpeg">
-			</center>
 
-			<br></br>
-			<img id='idImage'>
-			<img id="temp">
-			<!--<div id='console'></div>-->
-			<br></br>
-			<center><div id="chart_div"></div></center>
-			<br></br>
+			<h2> Lets Scan! </h2>
+
+			<div class="file-upload">
+			<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+
+				<div class="image-upload-wrap">
+					<input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+					<div class="drag-text">
+						<h3>Drag and drop a file or select add Image</h3>
+					</div>
+				</div>
+				<div class="file-upload-content">
+					<img class="file-upload-image" src="#" alt="your image" />
+					<div class="image-title-wrap">
+						<a type="button" href="./predict/predict.html" class="remove-image">Submit <span class="image-title">Uploaded Image</span></a>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>				
 	
@@ -167,14 +176,9 @@
 		</svg>
 	</div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-  
-
-    <script  src="js/index.js"></script>
-	<script src="index.js"></script>
-
-
-
+  <script  src="js/index.js"></script>
 
 </body>
 
