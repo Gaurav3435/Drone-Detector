@@ -287,10 +287,10 @@ body.light .navbar-brand::after{
 
   
   .file-upload-image {
-	  display: grid;
-	  justify-content: center;
-	max-height: 400px;
-	max-width: 600px;
+	display: grid;
+	justify-content: center;
+	max-height: 450px;
+	max-width: 650px;
 	margin: auto;
 	padding: 20px;
   }
