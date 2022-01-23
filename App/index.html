@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Team DataKnights</title>
+  
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link id='favicon' rel="shortcut icon" href="./Content/drone.png" type="image/x-png">
+
+  
+</head>
+
+<body>
+
+  	<div class="section">
+		  <div class = 'title'>
+			<h2>DataKnights</h2>
+		  </div>		
+		<!-- <div class="center-wrap">			
+			<h1 class="text-center">Upload</h1>
+			<p class="text-center mb-0">Look at the right bottom corner<span class="color-gradient-red-yellow"><i class="uil uil-chart-down size-22 ml-2"></i></span></p>
+		</div> -->
+
+		<div class="input">
+			<center>
+			<input class="choose" type="file" onchange="showFiles(event)" accept=".png, .jpg, .jpeg">
+			</center>
+
+			<br></br>
+			<img id='idImage'>
+			<img id="temp">
+			<!--<div id='console'></div>-->
+			<br></br>
+			<center><div id="chart_div"></div></center>
+			<br></br>
+		</div>
+	</div>				
+	
+	<a class="navbar-brand" href="https://front.codes" target="_blank">
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/logo.png" alt="FrontCodes Logo">
+	</a>
+									
+	<div class="switch">
+		<div class="circle"></div>
+	</div>	
+					
+	<!--Team Section-->
+    <section id="team" class="team">
+
+		<div class="container" data-aos="fade-up">
+  
+		  <header class="section-header">
+			<p>Our Team</p>
+		  </header>
+  
+		  <div class="row gy-4 justify-content-around">
+  
+			<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+			  <div class="member">
+				<div class="member-img">
+				  <img src="/assets/Gaurav-Patil1.png" class="img-fluid" width="300" height="400" alt="">
+				</div>
+				<div class="member-info">
+				  <h4>Gaurav Patil</h4>
+				  <span>AI Student <br> Machine-Learning, Backend</span>
+				</div>
+			  </div>
+			</div>
+  
+			<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+			  <div class="member">
+				<div class="member-img">
+				  <img src="/assets/Hrugved.png" class="img-fluid" width="300" height="400" alt="">
+				  <div class="social">
+					<!-- <a href="https://www.linkedin.com/in/hrugved-kolhe-364881193/"><i class="bi bi-linkedin"></i></a> -->
+				  </div>
+				</div>
+				<div class="member-info">
+				  <h4>Hrugved Kolhe</h4>
+				  <span>AI Student <br> Machine-Learning, Frontend</span>
+				</div>
+			  </div>
+			</div>
+		  </div>
+  
+		</div>
+  
+		
+  
+	  </section>
+	  <!-- End Team Section -->
+  
+	  <!--Contact Form-->
+	  <div id="contact" class="contact mt-5">
+  
+		<div class="container" data-aos="fade-up">
+  
+		  <header class="section-header">
+			<p>Contact Us</p>
+		  </header>
+  
+		  <div class="row gy-4">
+  
+			  <div class="hero-img">
+					  <img src="/assets/contact.png" class="img-fluid" alt="">
+			  </div>
+  
+			<div class="col-lg-6">
+			  <form id="php-email-form" class="php-email-form" accept-charset="UTF-8">
+				<div class="row gy-4">
+  
+				  <div class="col-md-6">
+					<input type="text" name="name" class="form-control" placeholder="Your Name" required>
+				  </div>
+  
+				  <div class="col-md-6 ">
+					<input type="email" class="form-control" name="email" placeholder="Your Email" required>
+				  </div>
+  
+				  <div class="col-md-12">
+					<input type="text" class="form-control" name="subject" placeholder="Subject" required>
+				  </div>
+  
+				  <div class="col-md-12">
+					<textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+				  </div>
+				  <input type="hidden" name="_redirect"value="http://localhost:5501/contact/"/>
+				  <div class="col-md-12 text-center">
+					<div class="loading">Loading</div>
+					<div class="error-message"></div>
+					<div id="sent" class="sent-message">Your message has been sent. Thank you!</div>
+  
+					<button class="contact-us-btn" type="submit">Send Message</button>
+				  </div>
+  
+				</div>
+			  </form>
+  
+			</div>
+  
+		  </div>
+  
+		</div>
+  
+	  </div>
+	  <!--Contact Form - End-->
+  
+	  <div class="footer">
+		  <div class="container d-flex align-items-center justify-content-center">
+			  © Copyright. All Rights Reserved
+		  </div>
+	  </div>
+
+	<div class="progress-wrap">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+	<script src="index.js"></script>
+
+
+
+
+</body>
+
+</html>
