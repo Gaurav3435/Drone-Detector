@@ -15,6 +15,7 @@ body {
     width: 100%;
     z-index: -1;
 }
+
 /*Section*/
 section {
     padding: 60px 0;
@@ -144,7 +145,7 @@ section {
   }
 
   .get-started-btn:hover{
-    background: #ff6d29;
+    background: #ffae00;
     color: #000;
     border: 2px solid rgb(0, 31, 134);
   }
@@ -185,6 +186,12 @@ section {
   
   .hero .hero-img {
     text-align: right;
+  }
+
+  .hero .hero-img img{
+    height: 90%;
+    width: 90%;
+    border-radius: 20%;
   }
   
   @media (min-width: 1024px) {
